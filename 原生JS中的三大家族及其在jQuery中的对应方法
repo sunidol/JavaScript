@@ -1,0 +1,28 @@
+原生JS中的三大家族：offset/scroll/client
+
+JS中的offset家族：
+
+一、offsetWidth与offsetHeight：  console.log(box.offsetWidth);
+
+获取的是元素的实际宽高 = width + border + padding
+
+注意点： 
+1.可以获取行内样式表及内嵌样式的宽高 
+2.获取到的值是一个number类型，不带单位 
+3.获取的宽高包含border和padding 
+4.只能读取，不能设置
+
+二、offsetLeft与offsetTop：
+
+offsetLeft:获取自己左外边框与offsetParent的左内边框的距离
+
+offsetTop:获取自己上外边框与offsetParent的上内边框的距离
+
+三、offsetParent:获取最近的定位父元素 （自己定位参照的父元素）
+
+注意点： 
+1.如果元素自身是固定定位（fixed），则定位父级是null 
+2.如果元素自身是非固定定位,并且所有的父元素都没有定位，那么他的定位父级是body 
+3.body的定位父级是null
+
+jQuery中获取宽高的方法
