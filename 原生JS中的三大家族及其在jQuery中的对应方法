@@ -11,7 +11,6 @@ JS中的offset家族：
 2.获取到的值是一个number类型，不带单位 
 3.获取的宽高包含border和padding 
 4.只能读取，不能设置
-
 ![image](https://github.com/sunidol/JavaScript/blob/JavaScript-journal/images/1.png)
 
 二、offsetLeft与offsetTop：
