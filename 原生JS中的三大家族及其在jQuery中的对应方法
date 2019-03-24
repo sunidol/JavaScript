@@ -12,7 +12,7 @@ JS中的offset家族：
 3.获取的宽高包含border和padding 
 4.只能读取，不能设置
 
-![image](https://github.com/sunidol/JavaScript/blob/JavaScript-journal/images/1.png)
+![images](https://github.com/sunidol/JavaScript/blob/JavaScript-journal/images/1.png)
 
 二、offsetLeft与offsetTop：
 
@@ -20,7 +20,7 @@ offsetLeft:获取自己左外边框与offsetParent的左内边框的距离
 
 offsetTop:获取自己上外边框与offsetParent的上内边框的距离
 
-![image](https://github.com/sunidol/JavaScript/blob/JavaScript-journal/images/2.png)
+![images](https://github.com/sunidol/JavaScript/blob/JavaScript-journal/images/2.png)
 
 三、offsetParent:获取最近的定位父元素 （自己定位参照的父元素）
 
