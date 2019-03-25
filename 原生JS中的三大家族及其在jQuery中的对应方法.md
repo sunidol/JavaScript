@@ -116,7 +116,7 @@ offsetTop:获取自己上外边框与offsetParent的上内边框的距离
 
 4、scrollLeft：onscroll事件发生时，元素向左卷曲出去的距离
 
-
+![image](https://github.com/sunidol/JavaScript/blob/JavaScript-journal/images/3.png)
 
 ## jQuery中scrollTop()与scrollLeft()方法
 
@@ -131,6 +131,8 @@ jQuery中的scrollLeft与scrollTop的方法和原生的js的一样。
 1、clientWidth/clientHeight：获取可视区域的宽高
 
 2、clientTop/clientLeft:不常用，其实就是左边框border-left和上边框border-top
+
+![image](https://github.com/sunidol/JavaScript/blob/JavaScript-journal/images/4.png)
 
 原生获取可视区域的clientHeight与clientWidth的方法：
 
