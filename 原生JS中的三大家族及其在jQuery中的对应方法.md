@@ -46,6 +46,7 @@ offsetTop:获取自己上外边框与offsetParent的上内边框的距离
 3.传参代表的是设置内容的宽高
 
 //例子：模拟响应式布局.
+
       $(window).on('resize', function () {
         if($(this).width() > 1200){
           $('body').css('backgroundColor','red');
@@ -134,6 +135,7 @@ jQuery中的scrollLeft与scrollTop的方法和原生的js的一样。
 原生获取可视区域的clientHeight与clientWidth的方法：
 
 //封装浏览器兼容函数获取界面可视区域
+
     getClientSize = function (  ) {
         return {
             clientWidth : window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || 0,
@@ -160,3 +162,22 @@ $('#btn2').on('click', function () {
         //   top:200
         // });
       });
+      
+# 总结： 
+
+### 相同点： 
+
+a、js中的scrollLeft与scrollTop与jQuery中的一样 
+
+b、js中的offsetLeft及offsetTop和jQuery中position方法一样 
+
+c、 $(window).width() 
+$(window).height()和原生中的clientHeight与clientWidth获取可视区的宽高一致
+
+### 最后一点，一定要理解清楚：
+
+可视区域就是：你可以看到的区域。
+
+浏览器窗口显示网页的部分（即不包括地址栏、工具栏）就是可视区。。
+
+你可以用鼠标来推动浏览器窗口来改变大小，此时可视区的大小也是跟着变的。
