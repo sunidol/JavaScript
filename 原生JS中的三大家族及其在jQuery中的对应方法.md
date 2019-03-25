@@ -130,3 +130,33 @@ jQuery中的scrollLeft与scrollTop的方法和原生的js的一样。
 1、clientWidth/clientHeight：获取可视区域的宽高
 
 2、clientTop/clientLeft:不常用，其实就是左边框border-left和上边框border-top
+
+原生获取可视区域的clientHeight与clientWidth的方法：
+
+//封装浏览器兼容函数获取界面可视区域
+    getClientSize = function (  ) {
+        return {
+            clientWidth : window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || 0,
+            clientHeight : window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || 0,
+    }
+    
+## jQuery中的position()方法
+
+position方法：获取的是元素距离有定位的父元素(offsetParent)的位置
+
+注意点： 
+
+1.获取到的也是一个对象,包含top和left值. 
+2.不能进行设置
+
+$('#btn2').on('click', function () {
+        //获取
+        console.log($('#son').position());
+
+
+        //不能设置
+        // $('#son').position({
+        //   left:200,
+        //   top:200
+        // });
+      });
