@@ -1,8 +1,8 @@
-**原生JS中的三大家族：offset/scroll/client
+# 原生JS中的三大家族：offset/scroll/client
 
-JS中的offset家族:
+## JS中的offset家族:
 
-一、offsetWidth与offsetHeight：  console.log(box.offsetWidth);
+**一、offsetWidth与offsetHeight：**  console.log(box.offsetWidth);
 
 获取的是元素的实际宽高 = width + border + padding
 
@@ -15,7 +15,7 @@ JS中的offset家族:
 
 ![images](https://github.com/sunidol/JavaScript/blob/JavaScript-journal/images/1.png)
 
-二、offsetLeft与offsetTop：
+**二、offsetLeft与offsetTop：**
 
 offsetLeft:获取自己左外边框与offsetParent的左内边框的距离
 
@@ -23,7 +23,9 @@ offsetTop:获取自己上外边框与offsetParent的上内边框的距离
 
 ![images](https://github.com/sunidol/JavaScript/blob/JavaScript-journal/images/2.png)
 
-三、offsetParent:获取最近的定位父元素 （自己定位参照的父元素）
+**三、offsetParent:**
+
+获取最近的定位父元素 （自己定位参照的父元素）
 
 注意点： 
 
@@ -31,9 +33,9 @@ offsetTop:获取自己上外边框与offsetParent的上内边框的距离
 2.如果元素自身是非固定定位,并且所有的父元素都没有定位，那么他的定位父级是body 
 3.body的定位父级是null
 
-jQuery中获取宽高的方法:
+## jQuery中获取宽高的方法:
 
-一、width()/height()方法：
+**一、width()/height()方法:**
 
 获取到的是内容的宽高，即width/height
 
@@ -59,7 +61,7 @@ jQuery中获取宽高的方法:
         }
       });
       
-二、innerWidth()/innerHeight()方法：
+**二、innerWidth()/innerHeight()方法：**
 
 获取到的是内容的宽高+padding 
 
@@ -69,7 +71,7 @@ jQuery中获取宽高的方法:
 2.获取不传参 
 3.传参代表的是设置内容的宽高，但是注意这里不会改变border的大小
 
-三、outerWidth()/outerHeight()方法：
+**三、outerWidth()/outerHeight()方法：**
 
 获取到的是内容+padding+border+margin 的宽高
 
@@ -79,13 +81,13 @@ jQuery中获取宽高的方法:
 2.不传参代表的是获取获取到的是内容+padding+border 的宽高
 3.传的参数是true，获取到的是内容+padding+border+margin 的宽高
 
-四、获取页面可视区的宽高
+**四、获取页面可视区的宽高**
 
 1、宽度：$(window).width()
 
 2、高度：$(window).height()
 
-五、offset()方法：获取到的是一个对象,里面有left值和top的值
+**五、offset()方法：获取到的是一个对象,里面有left值和top的值**
 
 注意点：
 
@@ -99,9 +101,9 @@ jQuery中获取宽高的方法:
           top:200
         });
         
-JS中的scroll家族   
+## JS中的scroll家族   
 
-一、scrollwidth与scrollHeight:
+**一、scrollwidth与scrollHeight:**
 
 获取元素内容的真实宽高，这里是内容，不包括内边距以及border
 
@@ -115,7 +117,7 @@ JS中的scroll家族
 
 
 
-jQuery中scrollTop()与scrollLeft()方法
+## jQuery中scrollTop()与scrollLeft()方法
 
 jQuery中的scrollLeft与scrollTop的方法和原生的js的一样。
 
@@ -123,7 +125,7 @@ jQuery中的scrollLeft与scrollTop的方法和原生的js的一样。
 
 2、获取页面被卷曲的宽度 $(window).scrollLeft();
 
-JS中的client家族
+## JS中的client家族
 
 1、clientWidth/clientHeight：获取可视区域的宽高
 
