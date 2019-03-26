@@ -88,7 +88,9 @@ offsetTop:获取自己上外边框与offsetParent的上内边框的距离
 
 2、高度：$(window).height()
 
-**五、offset()方法：获取到的是一个对象,里面有left值和top的值**
+**五、offset()方法：**
+
+获取元素相对于document的位置，得到的是一个对象,里面有left值和top的值(注意其与position（）方法的区别)
 
 注意点：
 
