@@ -3,8 +3,7 @@
 
 首先看一段代码：
 
-(```)
-
+```
 console.log('script start');
 
 setTimeout(function() {
@@ -18,8 +17,7 @@ Promise.resolve().then(function() {
 });
 
 console.log('script end');
-
-(```)
+```
 
 打印顺序是什么？
 正确答案是
